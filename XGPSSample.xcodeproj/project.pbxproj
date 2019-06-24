@@ -30,6 +30,7 @@
 		A7BE86852117EE1200C00BD2 /* serial.c in Sources */ = {isa = PBXBuildFile; fileRef = A7BE86822117EE1100C00BD2 /* serial.c */; };
 		A7BE86862117EE1200C00BD2 /* ntripclient.c in Sources */ = {isa = PBXBuildFile; fileRef = A7BE86842117EE1100C00BD2 /* ntripclient.c */; };
 		A7CE8B9A1FA7223D0053B8AD /* Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE8B991FA7223D0053B8AD /* Definitions.swift */; };
+		AD62B88222C07AAC004D6C0F /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62B88122C07AAC004D6C0F /* LogData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		A7BE86832117EE1100C00BD2 /* ntripclient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ntripclient.h; sourceTree = "<group>"; };
 		A7BE86842117EE1100C00BD2 /* ntripclient.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ntripclient.c; sourceTree = "<group>"; };
 		A7CE8B991FA7223D0053B8AD /* Definitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Definitions.swift; sourceTree = "<group>"; };
+		AD62B88122C07AAC004D6C0F /* LogData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		A74C764F1FA311ED00EE6E58 /* XGPSSDK */ = {
 			isa = PBXGroup;
 			children = (
+				AD62B88122C07AAC004D6C0F /* LogData.swift */,
 				A7BE86812117EE1100C00BD2 /* NTrip */,
 				A7BE86802117EDC700C00BD2 /* xgpscommand.h */,
 				A7BE867F2117EDB800C00BD2 /* xgps160def.h */,
@@ -240,6 +243,7 @@
 			files = (
 				A783731E1FA94B1F0029BA1C /* WaitingToConnectView.swift in Sources */,
 				A7CE8B9A1FA7223D0053B8AD /* Definitions.swift in Sources */,
+				AD62B88222C07AAC004D6C0F /* LogData.swift in Sources */,
 				A7BE86862117EE1200C00BD2 /* ntripclient.c in Sources */,
 				A74C76511FA312BE00EE6E58 /* XGPSManager.swift in Sources */,
 				A74C763F1FA30D4A00EE6E58 /* TripViewController.swift in Sources */,
