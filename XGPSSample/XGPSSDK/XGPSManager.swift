@@ -185,7 +185,8 @@ public class XGPSManager {
             return
         }
         let buff = UnsafeMutablePointer<UInt8>.allocate(capacity: 4)
-        buff.initialize(from: [UInt8(startBlock >> 8), UInt8(startBlock), UInt8(countBlock >> 8), UInt8(countBlock)])
+        buff.initialize(from: [UInt8(startBlock >> 8), UInt8(startBlock), UInt8(countBlock >> 8), UInt8(countBlock)], count: 0)
+        
         puck.sendCommand(toDevice: Int32(cmd160_logDelBlock), 0, buff, 4)
     }
     
@@ -194,7 +195,7 @@ public class XGPSManager {
         let dataExportBlock = logData.startBlock
         let dataExportNumBlock = logData.countBlock
         let buff = UnsafeMutablePointer<UInt8>.allocate(capacity: 4)
-        buff.initialize(from: [UInt8(dataExportBlock >> 8), UInt8(dataExportBlock), UInt8(dataExportNumBlock >> 8), UInt8(dataExportNumBlock)])
+        buff.initialize(from: [UInt8(dataExportBlock >> 8), UInt8(dataExportBlock), UInt8(dataExportNumBlock >> 8), UInt8(dataExportNumBlock)], count: 0)
         puck.sendCommand(toDevice: Int32(cmd160_logReadBulk), 0, buff, 4)
     }
     
